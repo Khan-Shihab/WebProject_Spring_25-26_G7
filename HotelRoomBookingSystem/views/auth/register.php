@@ -12,15 +12,15 @@
 
     <form id = "resgisterForm" method="POST">
         <label for="name">Full Name:</label><br>
-        <input type="text" name="name" id="name" placeholder = "John Doe"><br>
+        <input type="text" name="name" id="name" placeholder = "Shihab Khan"><br>
         <span id= "nameError" style="color:red"></span>
 
         <label for="email">Email Address:</label> <br>
-        <input type="email" name="email" id="email" placeholder="John@example.com"><br>      
+        <input type="email" name="email" id="email" placeholder="Name@example.com">   
         <span id="emailError" style="color:red"></span> 
 
         <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="01700000000"><br>
+        <input type="tel" id="phone" name="phone" placeholder="01700000000">
         <span id="phoneError" style="color:red;"></span><br>
 
         <label for="nationality">Nationality:</label><br>
@@ -34,7 +34,7 @@
             <option value="Canadian">Canadian</option>
             <option value="Australian">Australian</option>
             <option value="Other">Other</option>
-        </select><br>
+        </select>
         <span id="nationalityError" style="color:red;"></span><br>
 
         <label for="password">Password:</label><br>
@@ -45,10 +45,10 @@
         <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat password"><br>
         <span id="confirmError" style="color:red;"></span><br>
 
-        <br>
         <button type="submit">Create Account</button>
 
     </form>
+     <p>Already have an account? <a href="login.php">Sign in here</a></p>
 
 </body>
 </html>
