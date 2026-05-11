@@ -30,16 +30,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     if (!empty($errors))
     {
-        echo json_encode([
-        'success' => false,
-        'errors' => $errors
-      ]);
+        echo json_encode(['success' => false,'errors' => $errors]);
     }
     else
     {
-        echo json_encode([
-            'success' => true
-        ]);
+        echo json_encode(['success' => true]);
     }
 }
 ?>
