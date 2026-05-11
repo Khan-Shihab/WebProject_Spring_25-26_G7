@@ -1,5 +1,6 @@
 <?php
-function connection(){
+class db{
+public function connection(){
     $db_host = "localhost";
     $db_user = "root";
     $db_pass = "";
@@ -9,5 +10,7 @@ function connection(){
         die("Connection Error: ".$connection->connect_error);
     }
     return $connection; 
-}   
+} 
+}
+  
 ?>
