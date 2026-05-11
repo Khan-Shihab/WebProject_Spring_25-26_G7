@@ -10,7 +10,7 @@
     <p>Create your guest account</p>
     <hr>
 
-    <form id = "registerForm" onsubmit="return validateRegister()">
+    <form id = "registerForm">
         <label for="name">Full Name:</label><br>
         <input type="text" name="name" id="name" placeholder = "Shihab Khan">
         <span id= "nameError" style="color:red"></span><br>

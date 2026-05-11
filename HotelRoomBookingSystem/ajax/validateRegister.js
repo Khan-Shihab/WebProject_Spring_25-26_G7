@@ -1,3 +1,4 @@
+console.log("validateRegister.js loaded!");
 function validateRegister()
 {
     let name = document.getElementById("name").value;
@@ -62,8 +63,7 @@ function validateRegister()
         }
     };
 
-    xhttp.open("POST", "../../controllers/registerController.php", true);
-    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xhttp.open("POST", "/WebProject_Spring_25-26_G7/HotelRoomBookingSystem/controllers/registerController.php", true);    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
     xhttp.send("name=" + encodeURIComponent(name) +"&email=" + encodeURIComponent(email) +"&phone=" + encodeURIComponent(phone) +"&nationality=" + encodeURIComponent(nationality) +
         "&password=" + encodeURIComponent(password) +"&confirm_password=" + encodeURIComponent(confirm));
@@ -71,3 +71,8 @@ function validateRegister()
     return false;
     
 }
+
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    validateRegister();
+});
