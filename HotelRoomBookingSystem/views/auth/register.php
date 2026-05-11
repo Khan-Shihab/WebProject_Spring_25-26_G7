@@ -10,14 +10,14 @@
     <p>Create your guest account</p>
     <hr>
 
-    <form id = "resgisterForm" method="POST">
+    <form id = "resgisterForm" method="POST" action = "../../controllers/registerController.php">
         <label for="name">Full Name:</label><br>
         <input type="text" name="name" id="name" placeholder = "Shihab Khan"><br>
         <span id= "nameError" style="color:red"></span>
 
         <label for="email">Email Address:</label> <br>
-        <input type="email" name="email" id="email" placeholder="Name@example.com">   
-        <span id="emailError" style="color:red"></span> 
+        <input type="email" name="email" id="email" onkeyup = checkEmail() placeholder="Name@example.com">   
+        <span id="emailError" style="color:red"></span> <br>
 
         <label for="phone">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone" placeholder="01700000000">
@@ -38,7 +38,7 @@
         <span id="nationalityError" style="color:red;"></span><br>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Min. 8 characters"><br>
+        <input type="password" id="password" name="password" placeholder="Min. 8 characters">
         <span id="passwordError" style="color:red;"></span><br>
 
         <label for="confirm_password">Confirm Password:</label><br>
@@ -50,5 +50,6 @@
     </form>
      <p>Already have an account? <a href="login.php">Sign in here</a></p>
 
+     <script src= "../../Ajax/register.js"></script>
 </body>
 </html>
