@@ -11,9 +11,17 @@
     <hr>
 
     <form id = "resgisterForm" method="POST">
-        <label for="name">Full Name:</label>
+        <label for="name">Full Name:</label><br>
         <input type="text" name="name" id="name" placeholder = "John Doe"><br>
         <span id= "nameError" style="color:red"></span>
+
+        <label for="email">Email Address:</label> <br>
+        <input type="email" name="email" id="email" placeholder="John@example.com"><br>      
+        <span id="emailError" style="color:red"></span> 
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="01700000000"><br>
+        <span id="phoneError" style="color:red;">Phone number is required.</span><br>
     </form>
 
 </body>
