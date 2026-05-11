@@ -1,4 +1,7 @@
 <?php
+include "../models/db.php";
+include "../models/UserModel.php";
+
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
@@ -30,16 +33,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     if (!empty($errors))
     {
-        echo json_encode([
-        'success' => false,
-        'errors' => $errors
-      ]);
+        echo json_encode(['success' => false,'errors' => $errors]);
     }
     else
     {
-        echo json_encode([
-            'success' => true
-        ]);
+        echo json_encode(['success' => true]);
+        $hashedPassword = password_hash($password,PASSWORD_DEFAULT);
     }
+
 }
 ?>
