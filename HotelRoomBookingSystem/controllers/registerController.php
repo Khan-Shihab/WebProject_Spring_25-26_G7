@@ -3,6 +3,8 @@ include "../models/db.php";
 include "../models/UserModel.php";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $database   = new db();
+    $connection = $database->connection();
 
     $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
@@ -11,6 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $password = $_POST['password'] ?? '';
     $confirm = $_POST['confirm_password'] ?? '';
 
+    $emailCheck = emailExists($connection, $email);
     $errors = [];
     
     if (empty($name)) {
@@ -18,6 +21,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'A valid email address is required.';
+    }
+    elseif($emailCheck){
+        $errors['email'] = 'This email is already registered.';
     }
     if (empty($phone)) {
         $errors['phone'] = 'Phone number is required.';
@@ -38,9 +44,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
     else
     {
-
-
-        echo json_encode(['success' => true]);
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $result = createUser($connection, $name, $email, $hashedPassword, $phone, $nationality, "guest");
+        if ($result) {
+            echo json_encode(['success' => true]);
+        } else {
+            echo json_encode(['success' => false, 'errors' => ['general' => 'Registration failed. Try again.']]);
+        }
     }
 
 }
