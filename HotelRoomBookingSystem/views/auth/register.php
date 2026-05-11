@@ -36,6 +36,18 @@
             <option value="Other">Other</option>
         </select><br>
         <span id="nationalityError" style="color:red;"></span><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Min. 8 characters"><br>
+        <span id="passwordError" style="color:red;"></span><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat password"><br>
+        <span id="confirmError" style="color:red;"></span><br>
+
+        <br>
+        <button type="submit">Create Account</button>
+
     </form>
 
 </body>
