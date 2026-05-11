@@ -25,6 +25,7 @@ function validateRegister()
             if (data.success)
             {
                 alert("Validation Successful");
+                window.location.href = "/WebProject_Spring_25-26_G7/HotelRoomBookingSystem/views/auth/login.php";
 
             }
 
