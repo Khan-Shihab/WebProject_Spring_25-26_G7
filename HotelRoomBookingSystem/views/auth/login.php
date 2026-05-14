@@ -10,7 +10,7 @@
     <p>Sign in to your guest account</p>
     <hr>
 
-    <form id = "loginForm" method = "POST" action = "../../controllers/loginController>
+    <form id = "loginForm" method = "POST" action="../../controllers/loginController.php">
         <label for="email">Email Adress:</label><br>
         <input type="email" name="email" id="email">
         <span id= "emailError"></span><br>
