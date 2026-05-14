@@ -38,3 +38,10 @@ function loginUser($connection, $email) {
         return false;
     }
 }
+
+function saveRememberToken($connection, $userId, $token){
+    $sql = "UPDATE users SET remember_token=? WHERE id=?";
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("si", $token, $userId);
+    return $stmt->execute();
+}
