@@ -22,4 +22,19 @@ function emailExists($connection, $email) {
     return $result->num_rows > 0;
 }
 
-?>
+function loginUser($connection, $email) {
+    $sql = "SELECT id, name, role, password_hash FROM users WHERE email = ?";
+    
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+
+    if($result->num_rows == 1){
+        return $result->fetch_assoc();
+    }
+    else{
+        return false;
+    }
+}
