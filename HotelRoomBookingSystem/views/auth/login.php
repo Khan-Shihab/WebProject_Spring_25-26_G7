@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login — Hotel Booking</title>
+    <link rel="stylesheet" href="../../assets/login.css">
 </head>
 <body>
-    <h2>🏨 Hotel Booking Portal — Login</h2>
-    <p>Sign in to your guest account</p>
-    <hr>
 
-    <form id = "loginForm" method = "POST" action="../../controllers/loginController.php">
-        <label for="email">Email Adress:</label><br>
-        <input type="email" name="email" id="email">
-        <span id= "emailError"></span><br>
+<div class="container">
 
-        <label for="password">Password: </label><br>
-        <input type="password" name="password" id="password">
-        <span id = "passError"></span><br>
+    <div class="left-panel">
+        <p class="panel-brand">***** GRAND PALACE</p>
+        <h3 class="panel-heading">Experience<br>true luxury</h3>
+        <p class="panel-sub">5-star experience<br>awaits you</p>
+    </div>
 
-        <input type="checkbox" id="remember_me" name="remember_me" value="1">
-        <label for="remember_me">Remember Me</label><br>
+    <div class="login-container">
+        <h2>Sign in</h2>
+        <p>Access your elite account class</p>
 
-        <button type="submit">Login</button>
+        <form id="loginForm" method="POST" action="../../controllers/loginController.php">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="name@example.com">
+            <span id="emailError"></span>
 
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="••••••••">
+            <span id="passError"></span>
 
-    </form>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember_me" name="remember_me" value="1">
+                <label for="remember_me">Remember me</label>
+            </div>
+
+            <button type="submit">Login →</button>
+        </form>
+
+        <p id="registerLink">No account? <a href="register.php">Register here</a></p>
+    </div>
+
+</div>
 
 </body>
 </html>
