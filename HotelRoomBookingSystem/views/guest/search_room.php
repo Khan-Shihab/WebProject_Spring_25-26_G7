@@ -48,7 +48,7 @@ m           </select>
         <a href="">Book Now</a>
 
 
-        <h4>Suite</h4>
+        <h4>Suite Room</h4>
         <p>Price: tk 10000 per night</p>
         <p>Luxury suite room with bathtub and exclusive comforts</p>
         <a href="">Book Now</a>

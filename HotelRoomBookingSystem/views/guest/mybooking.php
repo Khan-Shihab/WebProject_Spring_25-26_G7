@@ -44,6 +44,18 @@
             </td>
         </tr>
 
+        <tr>
+            <td><label>3333</label></td>
+            <td><label>Standard</labbel></td>
+            <td><label>Date</label></td>
+            <td><label>Date</label></td>
+            <td><label>Price</label></td>
+            <td><label>Confirmed</label></td>
+            <td>
+            <button>Cancel</button>
+            </td>
+        </tr>
+
 
     </table>
     </body>
