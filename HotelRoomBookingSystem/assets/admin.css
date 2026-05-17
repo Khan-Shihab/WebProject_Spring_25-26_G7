@@ -324,7 +324,6 @@ button[type="submit"]:hover {
 .status-toggle {
     padding: 4px 14px;
     border-radius: 20px;
-    
     font-size: 12px;
     border: none;
     cursor: pointer;
@@ -334,6 +333,57 @@ button[type="submit"]:hover {
 .available-badge  { background-color: #d1e7dd; color: #0f5132; }
 .booked-badge     { background-color: #fff3cd; color: #856404; }
 .maintenance-badge { background-color: #f8d7da; color: #842029; }
+/* ────────────────────────────
+   ACTION BUTTONS (Check In/Out)
+──────────────────────────── */
+.action-btn {
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: Cambria, serif;
+    color: white;
+}
+
+.checkin-btn  { background-color: #1a3a6b; }
+.checkin-btn:hover { background-color: #0d2a52; }
+.checkout-btn { background-color: #2e7d32; }
+.checkout-btn:hover { background-color: #1b5e20; }
+
+/* ────────────────────────────
+   TABLE EDIT / DELETE LINKS
+──────────────────────────── */
+.edit-link {
+    color: #1a3a6b;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.edit-link:hover { text-decoration: underline; }
+
+.delete-link {
+    color: #b71c1c;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.delete-link:hover { text-decoration: underline; }
+
+/* ────────────────────────────
+   AMENITY TAGS
+──────────────────────────── */
+.tag {
+    background-color: #e8eef5;
+    border: 1px solid #c5d5e8;
+    color: #1a3a6b;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+}
 
 
 
