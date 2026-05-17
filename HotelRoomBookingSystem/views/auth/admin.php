@@ -328,3 +328,13 @@ if (!isset($_SESSION['user_id'])) {
                     </thead>
                     <tbody>
                         <!-- PHP loop from bookings JOIN users JOIN rooms JOIN room_types -->
+                         <tr>
+                            <td>1042</td>
+                            <td>Reduanul Islam</td>
+                            <td>101</td>
+                            <td>Deluxe</td>
+                            <td>Jun 20, 2025</td>
+                            <td>Jun 23, 2025</td>
+                            <td>৳ 19,500</td>
+                            <td><span class="badge badge-confirmed">Confirmed</span></td>
+                        </tr>
