@@ -440,4 +440,23 @@ function checkIn(bookingId, btn) {
     })
     .catch(() => alert('Something went wrong.'));
 }
+// ── AJAX: Check Out ──
+function checkOut(bookingId, btn) {
+    fetch('../ajax/checkout.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ booking_id: bookingId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            btn.textContent = 'Done';
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
 
