@@ -54,3 +54,105 @@ if (!isset($_SESSION['user_id'])) {
                 </ul>
             </div>
         <?php unset($_SESSION['flash_errors']); endif; ?>
+          <!-- ═══════════════════════════
+             SECTION 1: DASHBOARD
+        ════════════════════════════ -->
+        <div id="section-dashboard" class="section">
+
+            <h2>Dashboard</h2>
+            <p class="subtitle">Today's overview</p>
+
+            <!-- Summary Cards -->
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <p class="summary-label">Total Rooms</p>
+                    <p class="summary-number">42</p>
+                </div>
+                <div class="summary-card">
+                    <p class="summary-label">Occupied</p>
+                    <p class="summary-number" style="color:#1a3a6b;">18</p>
+                </div>
+                <div class="summary-card">
+                    <p class="summary-label">Available</p>
+                    <p class="summary-number" style="color:#2e7d32;">20</p>
+                </div>
+                <div class="summary-card">
+                    <p class="summary-label">Maintenance</p>
+                    <p class="summary-number" style="color:#b71c1c;">4</p>
+                </div>
+            </div>
+
+            <div class="two-col">
+
+                <!-- Today's Arrivals -->
+                <div class="form-box">
+                    <h3 class="form-box-title">Today's Arrivals</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Guest</th>
+                                <th>Room</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- PHP loop: bookings WHERE checkin_date = today AND status = Confirmed -->
+                            <tr>
+                                <td>Reduanul Islam</td>
+                                <td>101</td>
+                                <td>Deluxe</td>
+                                <td>
+                                    <button class="action-btn checkin-btn"
+                                        onclick="checkIn(1042, this)">Check In</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ayesha Khan</td>
+                                <td>205</td>
+                                <td>Suite</td>
+                                <td>
+                                    <button class="action-btn checkin-btn"
+                                        onclick="checkIn(1043, this)">Check In</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Today's Departures -->
+                <div class="form-box">
+                    <h3 class="form-box-title">Today's Departures</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Guest</th>
+                                <th>Room</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- PHP loop: bookings WHERE checkout_date = today AND status = Checked-In -->
+                            <tr>
+                                <td>Sabbir Ahmed</td>
+                                <td>302</td>
+                                <td>Standard</td>
+                                <td>
+                                    <button class="action-btn checkout-btn"
+                                        onclick="checkOut(1038, this)">Check Out</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Revenue Chart -->
+            <div class="form-box" style="margin-top:20px;">
+                <h3 class="form-box-title">Revenue — Last 8 Weeks</h3>
+                <canvas id="revenueChart" height="100"></canvas>
+            </div>
+
+        </div><!-- end dashboard -->
