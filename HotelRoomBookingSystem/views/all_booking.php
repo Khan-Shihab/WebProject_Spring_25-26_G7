@@ -232,6 +232,17 @@
                             <td>৳ 19,500</td>
                             <td><span class="badge badge-cancelled">Cancelled</span></td>
                             <td><a href="booking_detail.php?id=1038" class="detail-link">View</a></td>
+                         </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    
 
 
                 
