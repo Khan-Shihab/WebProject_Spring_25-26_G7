@@ -84,4 +84,6 @@
                         <span class="detail-value">Bangladeshi</span>
                     </div>
                 </div>
+                 <div class="form-box action-box">
+                    <h3 class="form-box-title">Action</h3>
                
