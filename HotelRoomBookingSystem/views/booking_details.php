@@ -63,4 +63,25 @@
                     <span class="detail-value">Jun 10, 2025</span>
                 </div>
             </div>
+            <div>
+                <div class="form-box">
+                    <h3 class="form-box-title">Guest Info</h3>
+                    <!-- PHP: JOIN users ON bookings.user_id = users.id -->
+                    <div class="detail-row">
+                        <span class="detail-label">Name</span>
+                        <span class="detail-value">Nobinur Islam</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Email</span>
+                        <span class="detail-value">nobinur@gmail.com</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Phone</span>
+                        <span class="detail-value">01700000000</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Nationality</span>
+                        <span class="detail-value">Bangladeshi</span>
+                    </div>
+                </div>
                
