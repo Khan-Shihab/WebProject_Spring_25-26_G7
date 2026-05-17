@@ -189,6 +189,49 @@
                             <td><span class="badge badge-confirmed">Confirmed</span></td>
                             <td><a href="booking_detail.php?id=1042" class="detail-link">View</a></td>
                         </tr>
+                         <tr>
+                            <td>1041</td>
+                            <td>Ayesha Khan</td>
+                            <td>205</td>
+                            <td>Suite</td>
+                            <td>Jun 18, 2025</td>
+                            <td>Jun 21, 2025</td>
+                            <td>৳ 36,000</td>
+                            <td><span class="badge badge-checkedin">Checked-In</span></td>
+                            <td><a href="booking_detail.php?id=1041" class="detail-link">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>1040</td>
+                            <td>Sabbir Ahmed</td>
+                            <td>302</td>
+                            <td>Standard</td>
+                            <td>Jun 15, 2025</td>
+                            <td>Jun 17, 2025</td>
+                            <td>৳ 7,000</td>
+                            <td><span class="badge badge-checkedout">Checked-Out</span></td>
+                            <td><a href="booking_detail.php?id=1040" class="detail-link">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>1039</td>
+                            <td>Nadia Hossain</td>
+                            <td>110</td>
+                            <td>Standard</td>
+                            <td>Jun 10, 2025</td>
+                            <td>Jun 12, 2025</td>
+                            <td>৳ 7,000</td>
+                            <td><span class="badge badge-pending">Pending</span></td>
+                            <td><a href="booking_detail.php?id=1039" class="detail-link">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>1038</td>
+                            <td>Mehedi Hasan</td>
+                            <td>201</td>
+                            <td>Deluxe</td>
+                            <td>Jun 05, 2025</td>
+                            <td>Jun 08, 2025</td>
+                            <td>৳ 19,500</td>
+                            <td><span class="badge badge-cancelled">Cancelled</span></td>
+                            <td><a href="booking_detail.php?id=1038" class="detail-link">View</a></td>
 
 
                 
