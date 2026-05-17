@@ -6,7 +6,7 @@
     <body>
         <form>
             <fielset>
-                <h2> Book Deluxe Room </h2>
+                <h1> Book Room </h1>
                 <label for="fullname">Full Name</label>
                 <input type="text" name="fullname" id="fullname" required>
                 <br><br>
