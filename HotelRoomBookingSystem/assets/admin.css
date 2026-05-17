@@ -100,6 +100,13 @@ h2 {
         2px 2px 0 #777,
         3px 3px 4px rgba(0,0,0,0.3);
 }
+.subtitle {
+    color: #1a3a6b;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
 
 
 
