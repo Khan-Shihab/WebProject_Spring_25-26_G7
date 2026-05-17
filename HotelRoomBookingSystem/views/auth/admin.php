@@ -338,3 +338,13 @@ if (!isset($_SESSION['user_id'])) {
                             <td>৳ 19,500</td>
                             <td><span class="badge badge-confirmed">Confirmed</span></td>
                         </tr>
+                        <tr>
+                            <td>1041</td>
+                            <td>Ayesha Khan</td>
+                            <td>205</td>
+                            <td>Suite</td>
+                            <td>Jun 18, 2025</td>
+                            <td>Jun 21, 2025</td>
+                            <td>৳ 36,000</td>
+                            <td><span class="badge badge-checkedin">Checked-In</span></td>
+                        </tr>
