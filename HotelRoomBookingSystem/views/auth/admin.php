@@ -182,3 +182,30 @@ if (!isset($_SESSION['user_id'])) {
                         <div>
                             <label>Price Per Night (৳)</label>
                             <input type="number" name="price_per_night" placeholder="5000" 
+                            min="1">
+                        </div>
+                    </div>
+
+                    <label>Max Capacity (guests)</label>
+                    <input type="number" name="max_capacity" placeholder="2" min="1" max="10">
+
+                    <label>Description</label>
+                    <textarea name="description" rows="3" placeholder="Describe this room type..."></textarea>
+
+                    <label>Thumbnail Image (JPEG/PNG, max 2MB)</label>
+                    <input type="file" name="thumbnail" accept="image/jpeg,image/png" class="file-input">
+
+                    <label>Amenities</label>
+                    <div class="amenity-checkboxes">
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="WiFi"> WiFi</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="AC"> AC</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="TV"> TV</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="Minibar"> Minibar</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="Safe"> Safe</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="Bathtub"> Bathtub</label>
+                        <label class="check-label"><input type="checkbox" name="amenities[]" value="Balcony"> Balcony</label>
+                    </div>
+
+                    <button type="submit" name="add_room_type">Add Room Type</button>
+                </form>
+            </div>
