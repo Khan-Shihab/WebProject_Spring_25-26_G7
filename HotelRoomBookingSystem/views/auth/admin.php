@@ -377,3 +377,15 @@ if (!isset($_SESSION['user_id'])) {
     </div><!-- end main-content -->
 
 </div><!-- end page-wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+// ── Open the correct section if URL has a hash ──
+(function () {
+    const hash = window.location.hash.replace('#', '');
+    const validSections = ['dashboard', 'room-types', 'rooms', 'bookings'];
+    if (hash && validSections.includes(hash)) {
+        const targetLink = document.querySelector('.nav-item[href="#' + hash + '"]');
+        if (targetLink) showSection(hash, targetLink);
+    }
+})();
