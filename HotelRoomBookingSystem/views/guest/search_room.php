@@ -29,8 +29,6 @@
 
 
 
-
-
         <div class="main-content">
 
             <h1> Search The Available Rooms </h1>
@@ -62,7 +60,7 @@
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
-                                m
+                            
                             </select>
                             <br><br>
                         </div>
@@ -77,7 +75,6 @@
 
 
 
-            <!-- <h2>Available Rooms</h2> -->
             <div class="results-label">Available Rooms</div>
 
             <div class="room-cards">
