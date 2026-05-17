@@ -1,8 +1,8 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
     <head>
-        <title>Booking Form</title>
+        <title> Booking Form </title>
     </head>
 
 
