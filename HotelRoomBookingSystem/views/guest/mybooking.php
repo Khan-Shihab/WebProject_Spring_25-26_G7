@@ -7,6 +7,26 @@
     </head>
 
     <body>
+
+        <div class="page-wrapper">
+
+    
+        <div class="sidebar">
+
+            <div class="panel-brand">HOTEL SYSTEM</div>
+
+            <div class="panel-heading">
+                My <br> Bookings
+            </div>
+
+            <div class="sidebar-nav">
+                <a href="#" class="nav-item">Search Rooms</a>
+                <a href="#" class="nav-item active">My Bookings</a>
+                <a href="#" class="nav-item">Profile</a>
+                <a href="#" class="nav-item logout">Logout</a>
+            </div>
+
+        </div>
     <h2>My Bookings</h2>
     <p>All my reservations</p>
 
