@@ -307,3 +307,24 @@ if (!isset($_SESSION['user_id'])) {
                         </div>
                     </div>
                     <button type="submit" style="width:auto; padding:8px 24px; margin-
+                    top:12px;">Apply Filter</button>
+                </form>
+            </div>
+
+            <!-- Bookings Table -->
+            <div class="form-box" style="padding:0; overflow:hidden;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Guest</th>
+                            <th>Room</th>
+                            <th>Type</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- PHP loop from bookings JOIN users JOIN rooms JOIN room_types -->
