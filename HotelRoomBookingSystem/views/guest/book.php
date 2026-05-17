@@ -1,14 +1,17 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
     <head>
-        <title>Booking Form</title>
+        <title> Booking Form </title>
     </head>
+
+
     <body>
         <form>
             <fielset>
-                <h2> Book Deluxe Room </h2>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="fullname" id="fullname" required>
+                <h1> Book Room </h1>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" required>
                 <br><br>
 
                 <label for="email">Email</label>
@@ -27,6 +30,41 @@
         
             </fieldset>
         </form>
+
+
+        <form>
+            <h1> Booking Confirmed </h1>
+
+            <table>
+                <tr>
+                    <td><label for="bookId">Booking ID</label></td>
+                    <td><input type="text" name="bookId" id="bookId" value="1234"></td>             
+                </tr>
+
+                <tr>
+                    <td><label for="roomType">Room Type</label></td>
+                    <td><input type="text" name="roomType" id="roomType" value="Deluxe"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="checkIn">Check-in</label></td>
+                    <td><input type="date" name="checkIn" id="checkIn" ></td> 
+                </tr>
+
+                <tr>
+                    <td><label for="checkOut">Check-out</label></td>
+                    <td><input type="date" name="checkOut" id="checkOut" "></td>    
+                </tr>
+
+                <tr>
+                    <td><label for="total">Total</label></td>
+                    <td><input type="number" name="total" id="total" value="00"></td>
+                </tr>
+            </table>
+        </form>
+
+
+
     </body>
 
 </html>
