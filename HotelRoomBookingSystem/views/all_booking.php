@@ -66,3 +66,25 @@
                                         onclick="checkIn(1042, this)">Check In</button>
                                 </td>
                             </tr>
+                                                        <tr>
+                                <td>Ayesha Khan</td>
+                                <td>205</td>
+                                <td>Suite</td>
+                                <td>
+                                    <button class="action-btn checkin-btn"
+                                        onclick="checkIn(1043, this)">Check In</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nadia Hossain</td>
+                                <td>110</td>
+                                <td>Standard</td>
+                                <td>
+                                    <button class="action-btn checkin-btn"
+                                        onclick="checkIn(1044, this)">Check In</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
