@@ -11,13 +11,25 @@
 
     <table>
         <tr>
-            <th>id</th>
+            <th>Id</th>
             <th>Room Type</th>
             <th>Check-in</th>
             <th>Check-out</th>
             <th>Total</th>
             <th>Status</th>
             <th>Action</th>
+        </tr>
+
+        <tr>
+            <td><label>1111</label></td>
+            <td><label>Deluxe</labbel></td>
+            <td><label>Date</label></td>
+            <td><label>Date</label></td>
+            <td><label>Price</label></td>
+            <td><label>Confirmed</label></td>
+            <td>
+            <button>Cancel</button>
+            </td>
         </tr>
 
 
