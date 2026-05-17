@@ -421,3 +421,23 @@ if (ctx) {
         }
     });
 }
+// ── AJAX: Check In ──
+function checkIn(bookingId, btn) {
+    fetch('../ajax/checkin.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ booking_id: bookingId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            btn.textContent = 'Check Out';
+            btn.className = 'action-btn checkout-btn';
+            btn.setAttribute('onclick', 'checkOut(' + bookingId + ', this)');
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
+
