@@ -34,3 +34,7 @@
                     <p class="summary-label">Occupied</p>
                     <p class="summary-number number-blue">18</p>
                 </div>
+                <div class="summary-card">
+                    <p class="summary-label">Available</p>
+                    <p class="summary-number number-green">20</p>
+                </div>
