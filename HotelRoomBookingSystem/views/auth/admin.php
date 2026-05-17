@@ -209,3 +209,32 @@ if (!isset($_SESSION['user_id'])) {
                     <button type="submit" name="add_room_type">Add Room Type</button>
                 </form>
             </div>
+            <!-- Room Types List -->
+            <div class="form-box" style="padding:0; overflow:hidden;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price/Night</th>
+                            <th>Capacity</th>
+                            <th>Amenities</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- PHP loop from room_types table -->
+                        <tr>
+                            <td>Standard</td>
+                            <td>৳ 3,500</td>
+                            <td>2</td>
+                            <td>
+                                <span class="tag">WiFi</span>
+                                <span class="tag">AC</span>
+                                <span class="tag">TV</span>
+                            </td>
+                            <td>
+                                <a href="#" class="edit-link">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
