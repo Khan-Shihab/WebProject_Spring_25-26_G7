@@ -46,4 +46,21 @@
                     <span class="detail-label">Room Type</span>
                     <span class="detail-value">Deluxe</span>
                 </div>
+                 <div class="detail-row">
+                    <span class="detail-label">Check-in</span>
+                    <span class="detail-value">Jun 20, 2025</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Check-out</span>
+                    <span class="detail-value">Jun 23, 2025</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Total Price</span>
+                    <span class="detail-value detail-price">৳ 19,500</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Booked On</span>
+                    <span class="detail-value">Jun 10, 2025</span>
+                </div>
+            </div>
                
