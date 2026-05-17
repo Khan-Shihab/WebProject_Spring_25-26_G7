@@ -86,4 +86,8 @@
                 </div>
                  <div class="form-box action-box">
                     <h3 class="form-box-title">Action</h3>
+                    <p class="action-note">Today is the check-in date for this booking.</p>
+                    <button class="action-btn checkin-btn full-btn"
+                        id="actionBtn"
+                        onclick="checkIn(1042, this)">Check In</button>
                
