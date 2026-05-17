@@ -45,5 +45,24 @@
             </div>
 
             <div class="two-col">
-                                <div class="form-box">
+                <div class="form-box">
                     <h3 class="form-box-title">Today's Arrivals</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Guest Name</th>
+                                <th>Room</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nobinur Islam</td>
+                                <td>101</td>
+                                <td>Deluxe</td>
+                                <td>
+                                    <button class="action-btn checkin-btn"
+                                        onclick="checkIn(1042, this)">Check In</button>
+                                </td>
+                            </tr>
