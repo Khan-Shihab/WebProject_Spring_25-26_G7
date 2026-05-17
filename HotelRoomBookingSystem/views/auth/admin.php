@@ -156,3 +156,29 @@ if (!isset($_SESSION['user_id'])) {
             </div>
 
         </div><!-- end dashboard -->
+        <!-- ═══════════════════════════
+             SECTION 2: ROOM TYPES
+        ════════════════════════════ -->
+        <div id="section-room-types" class="section" style="display:none;">
+
+            <h2>Room Types</h2>
+            <p class="subtitle">Manage room categories</p>
+
+            <!-- Add New Room Type Form -->
+            <div class="form-box">
+                <h3 class="form-box-title">Add New Room Type</h3>
+                <form method="POST" action="../controllers/roomtypeController.php" enctype="multipart/form-data">
+
+                    <div class="two-col">
+                        <div>
+                            <label>Name</label>
+                            <select name="name">
+                                <option value="">— Select —</option>
+                                <option value="Standard">Standard</option>
+                                <option value="Deluxe">Deluxe</option>
+                                <option value="Suite">Suite</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Price Per Night (৳)</label>
+                            <input type="number" name="price_per_night" placeholder="5000" 
