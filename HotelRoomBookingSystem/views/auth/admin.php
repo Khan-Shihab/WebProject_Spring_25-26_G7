@@ -368,3 +368,12 @@ if (!isset($_SESSION['user_id'])) {
                             <td>৳ 7,000</td>
                             <td><span class="badge badge-cancelled">Cancelled</span></td>
                         </tr>
+                         </tbody>
+                </table>
+            </div>
+
+        </div><!-- end bookings -->
+
+    </div><!-- end main-content -->
+
+</div><!-- end page-wrapper -->
