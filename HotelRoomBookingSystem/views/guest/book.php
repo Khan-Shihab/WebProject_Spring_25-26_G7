@@ -3,6 +3,7 @@
 
     <head>
         <title> Booking Form </title>
+        <link rel="stylesheet" href="../../assets/book.css">
     </head>
 
 

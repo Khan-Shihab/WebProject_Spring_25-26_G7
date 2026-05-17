@@ -3,9 +3,30 @@
 
     <head>
         <title> Search Rooms  </title>
+        <link rel="stylesheet" href="../../assets/search_room.css">
     </head>
 
     <body>
+
+    <div class="page-wrapper">
+
+        <div class="sidebar">
+
+            <div class="panel-brand">HOTEL SYSTEM</div>
+
+            <div class="panel-heading">
+                Search <br> Rooms
+            </div>
+
+            <div class="sidebar-nav">
+                <a href="" class="nav-item active">Search Rooms</a>
+                <a href="" class="nav-item">Bookings</a>
+                <a href="" class="nav-item">Profile</a>
+                <a href="" class="nav-item logout">Logout</a>
+            </div>
+
+        </div>
+
         <h1> Search The Available Rooms </h1>
         <p>Find your perfect and comfortable Room</p>
 

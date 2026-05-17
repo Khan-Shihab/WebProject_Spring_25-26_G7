@@ -3,6 +3,7 @@
 
     <head>
         <title> All my Booking Rooms  </title>
+        <link rel="stylesheet" href="../../assets/mybooking.css">
     </head>
 
     <body>
