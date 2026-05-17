@@ -1,5 +1,6 @@
 <?php
 
+
 function createUser($connection,$name,$email,$password,$phone,$nationality,$role){
     $sql = "INSERT INTO users (name,email,password_hash,phone,nationality,role) VALUES (?,?,?,?,?,?)";
     $stmt = $connection->prepare($sql);
@@ -50,5 +51,15 @@ function saveRememberToken($connection, $userId, $token){
     $stmt->bind_param("si", $token, $userId);
     return $stmt->execute();
 }
+
+function updateUserProfile($connection, $userId, $name, $email, $phone, $nationality) {
+
+    $sql = "UPDATE users SET name = ?, email = ?, phone = ?, nationality = ? WHERE id = ?";
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("ssssi", $name, $email, $phone, $nationality, $userId);
+    return $stmt->execute();
+}
+
+
 
 ?>
