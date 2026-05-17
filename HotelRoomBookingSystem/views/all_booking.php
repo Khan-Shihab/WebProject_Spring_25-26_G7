@@ -19,3 +19,4 @@
             <a href="../controllers/logoutController.php" class="nav-item logout">Logout</a>
         </nav>
     </div>
+    <div class="main-content">
