@@ -20,7 +20,7 @@ body {
     padding: 40px 20px;
 }
 
-/* ── Forms ── */
+
 form {
     background: white;
     border: 1px solid #e0e0e0;
@@ -47,7 +47,7 @@ fieldset {
     padding: 0;
 }
 
-/* ── Labels ── */
+
 label {
     display: block;
     font-size: 14px;
@@ -55,7 +55,7 @@ label {
     margin-bottom: 4px;
 }
 
-/* ── Inputs ── */
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -78,7 +78,7 @@ input:focus {
     background-color: #dce6f0;
 }
 
-/* ── Submit Button ── */
+
 input[type="submit"] {
     width: 100%;
     padding: 11px;
@@ -96,7 +96,7 @@ input[type="submit"]:hover {
     background-color: #0d2a52;
 }
 
-/* ── Confirmation Table ── */
+
 table {
     width: 100%;
     border-collapse: collapse;
