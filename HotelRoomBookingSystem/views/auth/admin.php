@@ -415,3 +415,9 @@ if (ctx) {
                 borderRadius: 6
             }]
         },
+         options: {
+            plugins: { legend: { display: false } },
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+}
