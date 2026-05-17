@@ -389,3 +389,15 @@ if (!isset($_SESSION['user_id'])) {
         if (targetLink) showSection(hash, targetLink);
     }
 })();
+// ── Section switcher ──
+function showSection(name, clickedLink) {
+    document.querySelectorAll('.section').forEach(function(s) {
+        s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-item').forEach(function(n) {
+        n.classList.remove('active');
+    });
+    document.getElementById('section-' + name).style.display = 'block';
+    clickedLink.classList.add('active');
+    return false;
+}
