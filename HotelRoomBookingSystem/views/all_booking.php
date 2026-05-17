@@ -20,3 +20,13 @@
         </nav>
     </div>
     <div class="main-content">
+            <div id="section-dashboard" class="section">
+
+            <h2>Occupancy Dashboard</h2>
+            <p class="subtitle">Live overview of today's hotel status</p>
+
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <p class="summary-label">Total Rooms</p>
+                    <p class="summary-number">42</p>
+                </div>
