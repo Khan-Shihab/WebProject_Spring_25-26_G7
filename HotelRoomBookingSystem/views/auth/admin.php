@@ -401,3 +401,17 @@ function showSection(name, clickedLink) {
     clickedLink.classList.add('active');
     return false;
 }
+// ── Revenue Chart ──
+var ctx = document.getElementById('revenueChart');
+if (ctx) {
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7','Week 8'],
+            datasets: [{
+                label: 'Revenue (৳)',
+                data: [45000, 62000, 38000, 71000, 55000, 83000, 49000, 67000],
+                backgroundColor: '#1a3a6b',
+                borderRadius: 6
+            }]
+        },
