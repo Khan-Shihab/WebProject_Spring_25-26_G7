@@ -30,3 +30,7 @@
                     <p class="summary-label">Total Rooms</p>
                     <p class="summary-number">42</p>
                 </div>
+                <div class="summary-card">
+                    <p class="summary-label">Occupied</p>
+                    <p class="summary-number number-blue">18</p>
+                </div>
