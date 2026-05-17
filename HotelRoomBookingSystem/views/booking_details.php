@@ -90,4 +90,13 @@
                     <button class="action-btn checkin-btn full-btn"
                         id="actionBtn"
                         onclick="checkIn(1042, this)">Check In</button>
+                                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../ajax/task4Actions.js"></script>
+</body>
+</html>
+  
                
