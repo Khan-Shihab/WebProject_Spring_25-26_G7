@@ -459,4 +459,32 @@ function checkOut(bookingId, btn) {
     })
     .catch(() => alert('Something went wrong.'));
 }
+// ── AJAX: Toggle room maintenance status ──
+function toggleStatus(roomId, btn) {
+    fetch('../ajax/toggleStatus.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ room_id: roomId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            if (data.new_status === 'available') {
+                btn.textContent = 'Available';
+                btn.className = 'status-toggle available-badge';
+            } else {
+                btn.textContent = 'Maintenance';
+                btn.className = 'status-toggle maintenance-badge';
+            }
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
+
+</script>
+
+</body>
+</html>
 
