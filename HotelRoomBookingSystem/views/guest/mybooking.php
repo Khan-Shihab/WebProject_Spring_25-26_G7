@@ -3,6 +3,7 @@
 
     <head>
         <title> All my Booking Rooms  </title>
+        <link rel="stylesheet" href="../../assets/mybooking.css">
     </head>
 
     <body>
@@ -35,6 +36,18 @@
         <tr>
             <td><label>2222</label></td>
             <td><label>Suite</labbel></td>
+            <td><label>Date</label></td>
+            <td><label>Date</label></td>
+            <td><label>Price</label></td>
+            <td><label>Confirmed</label></td>
+            <td>
+            <button>Cancel</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>3333</label></td>
+            <td><label>Standard</labbel></td>
             <td><label>Date</label></td>
             <td><label>Date</label></td>
             <td><label>Price</label></td>

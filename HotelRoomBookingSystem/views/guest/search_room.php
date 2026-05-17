@@ -1,62 +1,179 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title> Search Rooms  </title>
-    </head>
+<head>
+    <title> Search Rooms </title>
+    <link rel="stylesheet" href="../../assets/search_room.css">
+</head>
 
-    <body>
-        <h1> Search The Available Rooms </h1>
-        <p>Find your perfect and comfortable Room</p>
+<body>
 
-        <form>
-            <label for="checkIn">Check-in Date</label>
-            <input type="date" id="checkIn" name="checkIn">
-            <br><br>
+    <div class="page-wrapper">
 
-            <label for="checkOut">Check-out Date</label>
-            <input type="date" id="checkOut" name="checkOut">
-            <br><br>
+        <div class="sidebar">
 
-            <label for="guests">Number of Guests</label>
-            <select id="guests" name="guests">
-                <option value="">select</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>   
-m           </select>
-            <br><br>
+            <div class="panel-brand">HOTEL SYSTEM</div>
 
-            <input type="submit" value="Search Rooms">
-            </form>
+            <div class="panel-heading">
+                Search <br> Rooms
+            </div>
 
-
-
-        <h2>Available Rooms</h2>
-        <div>
-
-        <h4>Standard Room</h4>
-        <p>Price: tk 3000 per night</p>
-        <p>A comfortable room with all basic needs</p>
-        <a href="">Book Now</a>
-
-        
-        <h4>Deluxe Room</h4>
-        <p>Price: tk 6000 per night</p>
-        <p>Deluxe room with premium furnishings and city view</p>
-        <a href="">Book Now</a>
-
-
-        <h4>Suite</h4>
-        <p>Price: tk 10000 per night</p>
-        <p>Luxury suite room with bathtub and exclusive comforts</p>
-        <a href="">Book Now</a>
+            <div class="sidebar-nav">
+                <a href="" class="nav-item active">Search Rooms</a>
+                <a href="" class="nav-item">Bookings</a>
+                <a href="" class="nav-item">Profile</a>
+                <a href="" class="nav-item logout">Logout</a>
+            </div>
 
         </div>
 
 
-        
 
-    </body>
+
+
+        <div class="main-content">
+
+            <h1> Search The Available Rooms </h1>
+            <p>Find your perfect and comfortable Room</p>
+
+            <div class="form-box search-form-box">
+                <div class="form-box-title">Room Search</div>
+
+                <form>
+                    <div class="search-row">
+
+                        <div class="search-field">
+                            <label for="checkIn">Check-in Date</label>
+                            <input type="date" id="checkIn" name="checkIn">
+                            <br><br>
+                        </div>
+
+                        <div class="search-field">
+                            <label for="checkOut">Check-out Date</label>
+                            <input type="date" id="checkOut" name="checkOut">
+                            <br><br>
+                        </div>
+
+                        <div class="search-field">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="">select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                m
+                            </select>
+                            <br><br>
+                        </div>
+
+                        <div class="search-field search-btn-field">
+                            <input type="submit" value="Search Rooms">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <!-- <h2>Available Rooms</h2> -->
+            <div class="results-label">Available Rooms</div>
+
+            <div class="room-cards">
+
+                <div class="room-card">
+
+                    <div class="room-card-top">
+                        <div class="room-type-name">Standard Room</div>
+                        <div class="room-price">Tk 3000 <span>/ night</span></div>
+                    </div>
+
+                    <div class="room-desc">A comfortable room with all basic needs</div>
+                    <div class="amenity-tags">
+                        <div class="tag">WiFi</div>
+                        <div class="tag">AC</div>
+                        <div class="tag">TV</div>
+                    </div>
+
+                    <div class="room-card-footer">
+
+                        <div class="total-price">
+                            Total starts from Tk 3000
+                        </div>
+                        <a href="" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="room-card">
+
+                    <div class="room-card-top">
+                        <div class="room-type-name">Deluxe Room</div>
+                        <div class="room-price">
+                            Tk 6000 <span>/ night</span>
+                        </div>
+                    </div>
+
+                    <div class="room-desc">Deluxe room with premium furnishings and city view</div>
+                    <div class="amenity-tags">
+                        <div class="tag">WiFi</div>
+                        <div class="tag">City View</div>
+                        <div class="tag">Mini Bar</div>
+                    </div>
+
+                    <div class="room-card-footer">
+
+                        <div class="total-price">
+                            Total starts from Tk 6000
+                        </div>
+                        <a href="">Book Now</a>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="room-card">
+
+                    <div class="room-card-top">
+                        <div class="room-type-name">Suite Room</div>
+                        <<div class="room-price">
+                            Tk 10000 <span>/ night</span>
+                    </div>
+                </div>
+
+                <div class="room-desc">Luxury suite room with bathtub and exclusive comforts</div>
+                <div class="amenity-tags">
+                    <div class="tag">Bathtub</div>
+                    <div class="tag">Luxury</div>
+                    <div class="tag">Breakfast</div>
+                </div>
+                <div class="room-card-footer">
+
+                    <div class="total-price">
+                        Total starts from Tk 10000
+                    </div>
+                    <a href="">Book Now</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+</body>
+
 </html>
