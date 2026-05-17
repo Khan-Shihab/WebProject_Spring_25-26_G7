@@ -242,6 +242,13 @@
     </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../ajax/task4Actions.js"></script>
+
+</body>
+</html>
+
     
 
 
