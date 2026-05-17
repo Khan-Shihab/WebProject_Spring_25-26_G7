@@ -120,7 +120,48 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
+                 <div class="form-box chart-box">
+                <h3 class="form-box-title">Revenue — Last 8 Weeks</h3>
+                <canvas id="revenueChart" height="100"></canvas>
+            </div>
+
+        </div>
+
+        <div id="section-bookings" class="section hidden">
+
+            <h2>All Bookings</h2>
+            <p class="subtitle">Filter and manage all reservations</p>
+
+            <!-- Filter Form -->
+            <div class="form-box">
+                <h3 class="form-box-title">Filter Bookings</h3>
+
+                <form method="GET" action="">
+                    <div class="three-col">
+                        <div>
+                            <label for="filter_status">Status</label>
+                            <select id="filter_status" name="status">
+                                <option value="">All Statuses</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Checked-In">Checked-In</option>
+                                <option value="Checked-Out">Checked-Out</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date_from">From Date</label>
+                            <input type="date" id="date_from" name="date_from">
+                        </div>
+                        <div>
+                            <label for="date_to">To Date</label>
+                            <input type="date" id="date_to" name="date_to">
+                        </div>
+                    </div>
+                    <button type="submit" class="filter-btn">Apply Filter</button>
+                </form>
+            </div>
+
 
                 
