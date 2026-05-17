@@ -12,12 +12,10 @@
         <form>
             <label for="checkIn">Check-in Date</label>
             <input type="date" id="checkIn" name="checkIn">
-
             <br><br>
 
             <label for="checkOut">Check-out Date</label>
             <input type="date" id="checkOut" name="checkOut">
-
             <br><br>
 
             <label for="guests">Number of Guests</label>
@@ -28,8 +26,36 @@
                 <option value="3">3</option>
                 <option value="4">4</option>   
 m           </select>
+            <br><br>
 
-        </form>
+            <input type="submit" value="Search Rooms">
+            </form>
+
+
+
+        <h2>Available Rooms</h2>
+        <div>
+
+        <h4>Standard Room</h4>
+        <p>Price: tk 3000 per night</p>
+        <p>A comfortable room with all basic needs</p>
+        <a href="">Book Now</a>
+
+        
+        <h4>Deluxe Room</h4>
+        <p>Price: tk 6000 per night</p>
+        <p>Deluxe room with premium furnishings and city view</p>
+        <a href="">Book Now</a>
+
+
+        <h4>Suite</h4>
+        <p>Price: tk 10000 per night</p>
+        <p>Luxury suite room with bathtub and exclusive comforts</p>
+        <a href="">Book Now</a>
+
+        </div>
+
+
         
 
     </body>
