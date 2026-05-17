@@ -61,5 +61,10 @@ function updateUserProfile($connection, $userId, $name, $email, $phone, $nationa
 }
 
 
-
+function updateUserPreferences($connection, $userId, $roomType, $specialRequests) {
+    $sql = "UPDATE users SET preferred_room_type_id = ?, special_requests = ? WHERE id = ?";
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("isi", $roomType, $specialRequests, $userId);
+    return $stmt->execute();
+}
 ?>

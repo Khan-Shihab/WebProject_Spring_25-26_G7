@@ -26,7 +26,7 @@ session_start();
 
 <a href="../rooms/search.php" class="nav-item">Search Rooms</a>
 
-<a href="../../controllers/logoutController.php" class="nav-item logout">Logout</a>
+<a href="../controllers/logoutController.php" class="nav-item logout">Logout</a>
 
 </nav>
 
@@ -124,11 +124,9 @@ session_start();
 
 <option value="">— Select room type —</option>
 
-<option value="Deluxe">Deluxe</option>
-
-<option value="Suite">Suite</option>
-
-<option value="Standard">Standard</option>
+<option value="1">Deluxe</option>
+<option value="2">Suite</option>
+<option value="3">Standard</option>
 
 </select>
 
