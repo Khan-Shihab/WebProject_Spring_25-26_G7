@@ -87,4 +87,40 @@
                         </tbody>
                     </table>
                 </div>
+                 <div class="form-box">
+                    <h3 class="form-box-title">Today's Departures</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Guest Name</th>
+                                <th>Room</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sabbir Ahmed</td>
+                                <td>302</td>
+                                <td>Standard</td>
+                                <td>
+                                    <button class="action-btn checkout-btn"
+                                        onclick="checkOut(1038, this)">Check Out</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mehedi Hasan</td>
+                                <td>201</td>
+                                <td>Deluxe</td>
+                                <td>
+                                    <button class="action-btn checkout-btn"
+                                        onclick="checkOut(1036, this)">Check Out</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
                 
