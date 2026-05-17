@@ -238,3 +238,38 @@ if (!isset($_SESSION['user_id'])) {
                             </td>
                         </tr>
                         <tr>
+                             <td>Deluxe</td>
+                            <td>৳ 6,500</td>
+                            <td>3</td>
+                            <td>
+                                <span class="tag">WiFi</span>
+                                <span class="tag">AC</span>
+                                <span class="tag">Minibar</span>
+                                <span class="tag">Balcony</span>
+                            </td>
+                            <td>
+                                <a href="#" class="edit-link">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Suite</td>
+                            <td>৳ 12,000</td>
+                            <td>4</td>
+                            <td>
+                                <span class="tag">WiFi</span>
+                                <span class="tag">AC</span>
+                                <span class="tag">Bathtub</span>
+                                <span class="tag">Safe</span>
+                                <span class="tag">Balcony</span>
+                            </td>
+                            <td>
+                                <a href="#" class="edit-link">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div><!-- end room-types -->
