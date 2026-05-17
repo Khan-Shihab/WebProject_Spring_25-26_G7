@@ -273,3 +273,37 @@ if (!isset($_SESSION['user_id'])) {
             </div>
 
         </div><!-- end room-types -->
+          <!-- ═══════════════════════════
+             SECTION 4: BOOKINGS
+        ════════════════════════════ -->
+        <div id="section-bookings" class="section" style="display:none;">
+
+            <h2>All Bookings</h2>
+            <p class="subtitle">View and manage reservations</p>
+
+            <!-- Filter Form -->
+            <div class="form-box">
+                <h3 class="form-box-title">Filter Bookings</h3>
+                <form method="GET" action="">
+                    <div class="three-col">
+                        <div>
+                            <label>Status</label>
+                            <select name="status">
+                                <option value="">All</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Checked-In">Checked-In</option>
+                                <option value="Checked-Out">Checked-Out</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>From Date</label>
+                            <input type="date" name="date_from">
+                        </div>
+                        <div>
+                            <label>To Date</label>
+                            <input type="date" name="date_to">
+                        </div>
+                    </div>
+                    <button type="submit" style="width:auto; padding:8px 24px; margin-
