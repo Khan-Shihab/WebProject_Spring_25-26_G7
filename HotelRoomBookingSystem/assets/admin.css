@@ -135,6 +135,25 @@ h2 {
     font-weight: bold;
     color: #1a1a1a;
 }
+/* ────────────────────────────
+   FORM BOX
+──────────────────────────── */
+.form-box {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.form-box-title {
+    color: #1a3a6b;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
 
 
 
