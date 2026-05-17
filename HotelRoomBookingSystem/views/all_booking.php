@@ -162,6 +162,33 @@
                     <button type="submit" class="filter-btn">Apply Filter</button>
                 </form>
             </div>
+              <div class="form-box table-box">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Booking #</th>
+                            <th>Guest</th>
+                            <th>Room</th>
+                            <th>Type</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1042</td>
+                            <td>Reduanul Islam</td>
+                            <td>101</td>
+                            <td>Deluxe</td>
+                            <td>Jun 20, 2025</td>
+                            <td>Jun 23, 2025</td>
+                            <td>৳ 19,500</td>
+                            <td><span class="badge badge-confirmed">Confirmed</span></td>
+                            <td><a href="booking_detail.php?id=1042" class="detail-link">View</a></td>
+                        </tr>
 
 
                 
