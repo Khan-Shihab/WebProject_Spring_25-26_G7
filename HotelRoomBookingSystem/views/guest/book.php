@@ -10,8 +10,8 @@
         <form>
             <fielset>
                 <h1> Book Room </h1>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="fullname" id="fullname" required>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" required>
                 <br><br>
 
                 <label for="email">Email</label>
@@ -37,8 +37,8 @@
 
             <table>
                 <tr>
-                    <td><label for="bid">Booking ID</label></td>
-                    <td><input type="text" name="bid" id="bid" value="1234"></td>             
+                    <td><label for="bookId">Booking ID</label></td>
+                    <td><input type="text" name="bookId" id="bookId" value="1234"></td>             
                 </tr>
 
                 <tr>
@@ -48,12 +48,12 @@
 
                 <tr>
                     <td><label for="checkIn">Check-in</label></td>
-                    <td><input type="date" name="checkIn" id="checkIn" value="16-5-2025"></td> 
+                    <td><input type="date" name="checkIn" id="checkIn" ></td> 
                 </tr>
 
                 <tr>
                     <td><label for="checkOut">Check-out</label></td>
-                    <td><input type="date" name="checkOut" id="checkOut" value="20-5-2025"></td>    
+                    <td><input type="date" name="checkOut" id="checkOut" "></td>    
                 </tr>
 
                 <tr>
