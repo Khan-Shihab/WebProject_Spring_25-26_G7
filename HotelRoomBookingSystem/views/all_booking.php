@@ -38,3 +38,10 @@
                     <p class="summary-label">Available</p>
                     <p class="summary-number number-green">20</p>
                 </div>
+                 <div class="summary-card">
+                    <p class="summary-label">Maintenance</p>
+                    <p class="summary-number number-red">4</p>
+                </div>
+            </div>
+
+            <div class="two-col">
