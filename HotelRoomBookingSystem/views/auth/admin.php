@@ -27,3 +27,30 @@ if (!isset($_SESSION['user_id'])) {
             <a href="../controllers/logoutController.php" class="nav-item logout">Logout</a>
         </nav>
     </div>
+
+      <!-- MAIN -->
+    <div class="main-content">
+
+        <!-- ── Flash Messages ── -->
+        <?php if (!empty($_SESSION['flash_success'])): ?>
+            <div style="background:#d1e7dd;color:#0f5132;padding:12px 20px;border-radius:8px;margin-bottom:16px;">
+                <?= htmlspecialchars($_SESSION['flash_success']) ?>
+            </div>
+        <?php unset($_SESSION['flash_success']); endif; ?>
+
+        <?php if (!empty($_SESSION['flash_error'])): ?>
+            <div style="background:#f8d7da;color:#842029;padding:12px 20px;border-radius:8px;margin-bottom:16px;">
+                <?= htmlspecialchars($_SESSION['flash_error']) ?>
+            </div>
+        <?php unset($_SESSION['flash_error']); endif; ?>
+
+        <?php if (!empty($_SESSION['flash_errors'])): ?>
+            <div style="background:#f8d7da;color:#842029;padding:12px 20px;border-radius:8px;margin-bottom:16px;">
+                <strong>Please fix the following:</strong>
+                <ul style="margin-top:6px;padding-left:18px;">
+                    <?php foreach ($_SESSION['flash_errors'] as $err): ?>
+                        <li><?= htmlspecialchars($err) ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php unset($_SESSION['flash_errors']); endif; ?>
