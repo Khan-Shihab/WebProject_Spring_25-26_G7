@@ -20,17 +20,22 @@
             </div>
 
             <div class="sidebar-nav">
-                <a href="#" class="nav-item">Search Rooms</a>
-                <a href="#" class="nav-item active">My Bookings</a>
-                <a href="#" class="nav-item">Profile</a>
-                <a href="#" class="nav-item logout">Logout</a>
+                <a href="" class="nav-item">Search Rooms</a>
+                <a href="" class="nav-item active">My Bookings</a>
+                <a href="" class="nav-item">Profile</a>
+                <a href="" class="nav-item logout">Logout</a>
             </div>
 
         </div>
+
+
+    <div class="main-content">
     <h2>My Bookings</h2>
     <p>All my reservations</p>
 
-    <table>
+    <div class="form-box">
+
+    <table class="bookings-table">
         <tr>
             <th>Id</th>
             <th>Room Type</th>
@@ -47,9 +52,9 @@
             <td><label>Date</label></td>
             <td><label>Date</label></td>
             <td><label>Price</label></td>
-            <td><label>Confirmed</label></td>
+            <td><span class="badge badge-confirmed">Confirmed</span></td>
             <td>
-            <button>Cancel</button>
+            <button class="cancel-btn">Cancel</button>
             </td>
         </tr>
 
@@ -59,9 +64,9 @@
             <td><label>Date</label></td>
             <td><label>Date</label></td>
             <td><label>Price</label></td>
-            <td><label>Confirmed</label></td>
+            <td><span class="badge badge-pending">Pending</span></td>
             <td>
-            <button>Cancel</button>
+            <button class="cancel-btn">Cancel</button>
             </td>
         </tr>
 
@@ -71,12 +76,17 @@
             <td><label>Date</label></td>
             <td><label>Date</label></td>
             <td><label>Price</label></td>
-            <td><label>Confirmed</label></td>
+            <td><span class="badge badge-checkedin">Checked In</span></td>
             <td>
-            <button>Cancel</button>
+            <button class="cancel-btn">Cancel</button>
             </td>
         </tr>
+    
+    </div>
 
+    </div>
+
+    </div>
 
     </table>
     </body>
