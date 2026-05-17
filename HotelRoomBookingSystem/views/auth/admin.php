@@ -357,3 +357,14 @@ if (!isset($_SESSION['user_id'])) {
                             <td>Jun 17, 2025</td>
                             <td>৳ 7,000</td>
                             <td><span class="badge badge-checkedout">Checked-Out</span></td>
+                             </tr>
+                        <tr>
+                            <td>1039</td>
+                            <td>Nadia Hossain</td>
+                            <td>110</td>
+                            <td>Standard</td>
+                            <td>Jun 10, 2025</td>
+                            <td>Jun 12, 2025</td>
+                            <td>৳ 7,000</td>
+                            <td><span class="badge badge-cancelled">Cancelled</span></td>
+                        </tr>
