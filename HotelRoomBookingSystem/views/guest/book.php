@@ -8,8 +8,10 @@
 
 
     <body>
+
+       <div class="container">
         <form>
-            <fielset>
+            <fieldset>
                 <h1> Book Room </h1>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="fullName" id="fullName" required>
@@ -54,18 +56,18 @@
 
                 <tr>
                     <td><label for="checkOut">Check-out</label></td>
-                    <td><input type="date" name="checkOut" id="checkOut" "></td>    
+                    <td><input type="date" name="checkOut" id="checkOut"></td>    
                 </tr>
 
                 <tr>
                     <td><label for="total">Total</label></td>
-                    <td><input type="number" name="total" id="total" value="00"></td>
+                    <td><input type="number" name="total" id="totals" value="00"></td>
                 </tr>
             </table>
         </form>
 
 
-
+    </div>
     </body>
 
 </html>
