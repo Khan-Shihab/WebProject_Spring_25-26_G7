@@ -45,3 +45,5 @@
             </div>
 
             <div class="two-col">
+                                <div class="form-box">
+                    <h3 class="form-box-title">Today's Arrivals</h3>
