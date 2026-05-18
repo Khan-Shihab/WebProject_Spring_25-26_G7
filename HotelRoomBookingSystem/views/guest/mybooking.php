@@ -20,10 +20,10 @@
             </div>
 
             <div class="sidebar-nav">
-                <a href="" class="nav-item">Search Rooms</a>
-                <a href="" class="nav-item active">My Bookings</a>
-                <a href="" class="nav-item">Profile</a>
-                <a href="" class="nav-item logout">Logout</a>
+                <a href="../user.php" class="nav-item active">My Profile</a>
+                <a href="mybooking.php" class="nav-item">My Bookings</a>
+                <a href="search_room.php" class="nav-item">Search Rooms</a>
+                <a href="../controllers/logoutController.php" class="nav-item logout">Logout</a>
             </div>
 
         </div>
