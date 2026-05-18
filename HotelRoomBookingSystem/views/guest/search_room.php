@@ -140,7 +140,7 @@
 
                     <div class="room-card-top">
                         <div class="room-type-name">Suite Room</div>
-                        <<div class="room-price">
+                        <div class="room-price">
                             Tk 10000 <span>/ night</span>
                     </div>
                 </div>
