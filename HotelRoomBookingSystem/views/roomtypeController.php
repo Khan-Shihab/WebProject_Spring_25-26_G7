@@ -22,5 +22,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_room_type'])) {
     if (isset($_POST['amenities'])) {
         $amenities = implode(",", $_POST['amenities']);
     }
+    $thumbnail_path = "";
+
+    if (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] == 0) {
+
+        $filename = time() . "_" . $_FILES['thumbnail']['name'];
+
+        $upload_folder = "../assets/uploads/room_types/";
+
+        if (!is_dir($upload_folder)) {
+            mkdir($upload_folder, 0777, true);
+        }
+
+        move_uploaded_file(
+            $_FILES['thumbnail']['tmp_name'],
+            $upload_folder . $filename
+        );
 
 
