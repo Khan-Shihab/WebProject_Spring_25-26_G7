@@ -389,3 +389,102 @@ if (!isset($_SESSION['user_id'])) {
         if (targetLink) showSection(hash, targetLink);
     }
 })();
+// ── Section switcher ──
+function showSection(name, clickedLink) {
+    document.querySelectorAll('.section').forEach(function(s) {
+        s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-item').forEach(function(n) {
+        n.classList.remove('active');
+    });
+    document.getElementById('section-' + name).style.display = 'block';
+    clickedLink.classList.add('active');
+    return false;
+}
+// ── Revenue Chart ──
+var ctx = document.getElementById('revenueChart');
+if (ctx) {
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7','Week 8'],
+            datasets: [{
+                label: 'Revenue (৳)',
+                data: [45000, 62000, 38000, 71000, 55000, 83000, 49000, 67000],
+                backgroundColor: '#1a3a6b',
+                borderRadius: 6
+            }]
+        },
+         options: {
+            plugins: { legend: { display: false } },
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+}
+// ── AJAX: Check In ──
+function checkIn(bookingId, btn) {
+    fetch('../ajax/checkin.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ booking_id: bookingId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            btn.textContent = 'Check Out';
+            btn.className = 'action-btn checkout-btn';
+            btn.setAttribute('onclick', 'checkOut(' + bookingId + ', this)');
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
+// ── AJAX: Check Out ──
+function checkOut(bookingId, btn) {
+    fetch('../ajax/checkout.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ booking_id: bookingId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            btn.textContent = 'Done';
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
+// ── AJAX: Toggle room maintenance status ──
+function toggleStatus(roomId, btn) {
+    fetch('../ajax/toggleStatus.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ room_id: roomId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            if (data.new_status === 'available') {
+                btn.textContent = 'Available';
+                btn.className = 'status-toggle available-badge';
+            } else {
+                btn.textContent = 'Maintenance';
+                btn.className = 'status-toggle maintenance-badge';
+            }
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(() => alert('Something went wrong.'));
+}
+
+</script>
+
+</body>
+</html>
+
