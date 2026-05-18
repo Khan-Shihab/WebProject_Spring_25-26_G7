@@ -1,56 +1,73 @@
-<?php
-include "../../controlers/loginController.php";
-session_start();
-if (isset($_COOKIE['remember_token']) && $_SESSION['role']!="admin") {
-    header("Location: ../user.php");
-    exit;
-}
-?> 
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login — Hotel Booking</title>
-    <link rel="stylesheet" href="../../assets/login.css">
-</head>
+    <head>
+        <title> Booking Form </title>
+        <link rel="stylesheet" href="../../assets/book.css">
+    </head>
 
-<body>
-    
-    <div class="container">
 
-        <div class="left-panel">
-            <p class="panel-brand">*** GRAND PALACE</p>
-            <h3 class="panel-heading">Experience<br>true luxury</h3>
-            <p class="panel-sub">5-star experience<br>awaits you</p>
-        </div>
+    <body>
 
-        <div class="login-container">
-            <h2>Sign in</h2>
-            <p>Access your elite account class</p>
+       <div class="container">
+        <form>
+            <fieldset>
+                <h1> Book Room </h1>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" required>
+                <br><br>
 
-            <form id="loginForm" method="POST" action="../../controllers/loginController.php">
-                <label for="email">Email Adress:</label><br>
-                <input type="email" name="email" id="email">
-                <span id="emailError"></span><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
 
-                <label for="password">Password: </label><br>
-                <input type="password" name="password" id="password">
-                <span id="passError"></span><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required>
+                <br><br>
 
-                <input type="checkbox" id="remember_me" name="remember_me" value="1">
-                <label for="remember_me">Remember Me</label><br>
-               <p style="color:brown">
-                <?= isset($_SESSION["error"]) ? $_SESSION["error"] : ""; ?></p>
+                <label for="total">Total</label>
+                <input type="number" name="total" id="total" value="00">
+                <br><br>
 
-                <?php unset($_SESSION["error"]); ?>
-                <button type="submit">Login</button>
-            </form>
-            
-        </div>   
-    </div>     
-</body>
+                <input type="submit" value="Confirm Booking">
+        
+            </fieldset>
+        </form>
+
+
+        <form>
+            <h1> Booking Confirmed </h1>
+
+            <table>
+                <tr>
+                    <td><label for="bookId">Booking ID</label></td>
+                    <td><input type="text" name="bookId" id="bookId" value="1234"></td>             
+                </tr>
+
+                <tr>
+                    <td><label for="roomType">Room Type</label></td>
+                    <td><input type="text" name="roomType" id="roomType" value="Deluxe"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="checkIn">Check-in</label></td>
+                    <td><input type="date" name="checkIn" id="checkIn" ></td> 
+                </tr>
+
+                <tr>
+                    <td><label for="checkOut">Check-out</label></td>
+                    <td><input type="date" name="checkOut" id="checkOut"></td>    
+                </tr>
+
+                <tr>
+                    <td><label for="total">Total</label></td>
+                    <td><input type="number" name="total" id="totals" value="00"></td>
+                </tr>
+            </table>
+        </form>
+
+
+    </div>
+    </body>
 
 </html>
