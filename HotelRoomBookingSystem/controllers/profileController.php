@@ -14,9 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $database = new db();
     $connection = $database->connection();
 
-    $name        = trim($_POST['name'] ?? '');
-    $email       = trim($_POST['email'] ?? '');
-    $phone       = trim($_POST['phone'] ?? '');
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $phone = trim($_POST['phone'] ?? '');
     $nationality = trim($_POST['nationality'] ?? '');
 
     $errors = [];
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'A valid email address is required.';
     } else {
-        // ✅ Pass $userId to exclude current user from email check
+
         if (emailExists($connection, $email, $userId)) {
             $errors['email'] = 'This email is already registered.';
         }
@@ -47,9 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = updateUserProfile($connection, $userId, $name, $email, $phone, $nationality);
 
     if ($result) {
-        $_SESSION['name']        = $name;
-        $_SESSION['email']       = $email;
-        $_SESSION['phone']       = $phone;
+        $_SESSION['name'] = $name;
+        $_SESSION['email'] = $email;
+        $_SESSION['phone'] = $phone;
         $_SESSION['nationality'] = $nationality;
         echo json_encode(['success' => true]);
     } else {
