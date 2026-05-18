@@ -38,5 +38,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_room_type'])) {
             $_FILES['thumbnail']['tmp_name'],
             $upload_folder . $filename
         );
+        $thumbnail_path = "assets/uploads/room_types/" . $filename;
+    }
+
+    $success = add_roomType($connection,$name,$description,$price_per_night,$max_capacity,$thumbnail_path,$amenities
+    );
+
+    if ($success) {
+        $_SESSION['flash_success'] = "Room type added successfully";
+    } else {
+        $_SESSION['flash_error'] = "Failed to add room type";
+    }
+
+    header("Location: ../views/admin.php");
+    exit();
+}
+?>
+        
+        
 
 
