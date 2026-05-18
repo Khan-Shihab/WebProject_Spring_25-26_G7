@@ -35,3 +35,32 @@ document.querySelector('form[action="../controllers/profileController.php"]')
     }
 });
 
+document.querySelector('form[action="../controllers/preferenceController.php"]')
+.addEventListener('submit', async function(e) {
+
+    e.preventDefault();
+
+    document.getElementById('roomTypeError').textContent = '';
+
+    const checked = document.getElementById('subscribe_offers').checked;
+
+    document.cookie = "subscribe_offers=" + (checked ? '1' : '0');
+
+    const response = await fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this)
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+
+        alert('Preferences saved successfully!');
+
+    } else {
+
+        if (data.errors.preferred_room_type_id)
+            document.getElementById('roomTypeError').textContent =
+                data.errors.preferred_room_type_id;
+    }
+});
