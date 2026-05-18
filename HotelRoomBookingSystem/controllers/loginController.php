@@ -2,7 +2,6 @@
 include "../models/db.php";
 include "../models/UserModel.php";
 session_start();
-
 $database = new db();
 $connection = $database->connection();
 
@@ -18,6 +17,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $_SESSION['user_id']= $user['id'];
         $_SESSION['name'] = $user['name'];
         $_SESSION['role'] = $user['role'];
+        $_SESSION['phone'] = $user['phone'];
+        $_SESSION['email'] = $uemail;
+        $_SESSION['nationality']=$user["nationality"];
 
         if($remember_me){
             $token = bin2hex(random_bytes(32));
@@ -35,7 +37,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
     }
     else{
-        echo "Invalid email or password";
+        $_SESSION["error"]= "Invalid email or password";
+         header("Location: ../views/auth/login.php");
         exit;
     }
    
